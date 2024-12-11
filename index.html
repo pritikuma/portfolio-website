@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Personal Portfolio Website Design </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+   <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <!-- <a href="#about">About</a> -->
+        <!-- <a href="#services">Services</a> -->
+        <a href="#portfolio">Portfolio</a>
+        <!-- <a href="#contact">Contact</a> -->
+    </nav>
+   </header> 
+   <section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Priti Kumari</h1>
+        <h3>And I'm a<span class="multiple-text">Frontend Developer</span></h3>
+        <p> Hello! I am a passionate Frontend Developer, currently pursuing a B.Tech in Electronics and Communication Engineering at the Indian Institute of Technology, Guwahati. I have hands-on experience in web technologies like HTML, CSS, JavaScript, React.js, and backend frameworks like Node.js. Over the years, I've worked on dynamic web projects like an Airline Management System, Guidance-Hub, and Campus-Collaborate, showcasing my ability to design user-friendly interfaces and implement secure backend solutions.</p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/priti-kumari-79a29b262" target="_blank">
+                <i class='bx bxl-linkedin-square'></i>
+            </a>
+            <a href="https://github.com/pritikuma" target="_blank">
+                <i class='bx bxl-github'></i>
+            </a>
+        </div>
+        
+        <a href="Resume_IIT_GUWAHATI.pdf" class="btn">Download CV</a>
+    </div>
+    <div class="home-img">
+       <img src="assets/image.png" alt=""> 
+    </div>
+   </section>
+   <!-- <section class="about" id="about">
+    <div class="about-img">
+        <img src="assets/PRITI PHOTO.jpg" alt="">
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">about<span>Me</span></h2>
+        <h3 >Frontend Developer</h3>
+        <p>Hello! I’m Priti Kumari, a motivated Frontend Developer and a B.Tech student in Electronics and Communication Engineering at IIT Guwahati. I specialize in creating intuitive, user-friendly web designs using technologies like HTML, CSS, JavaScript, and React.js.
+
+            With a passion for solving problems through code, I’ve built impactful projects.Beyond academics, I’m a quick learner, team player, and consistently aim to bridge creativity and functionality in my work. I believe in continuous improvement and actively participate in tech events to sharpen my skills.</p>
+        <a href="#" class="btn">Read more</a>
+    </div>
+   </section> -->
+   <section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Project</span></h2>
+    <div class="portfolio-container">
+        <div class="portfolio-box" onclick="openModal('project1')">
+
+           <img src="assets/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="">
+           <div class="portfolio-layer">   
+           <h4>Airline Management System</h4>
+           <p>Developed a dynamic system to streamline airline operations, including flight scheduling, ticket booking, and passenger management, ensuring a user-friendly and efficient experience.</p>
+           <div class="tech-icons">
+            <i class='bx bxl-nodejs' title="Node.js"></i>
+            <i class='bx bxl-mongodb' title="MongoDB"></i>
+            <!-- <i class='bx bx-credit-card' title="Razorpay API"></i> -->
+            <i class='bx bxl-javascript' title="JavaScript"></i>   
+        </div>
+           <a href="https://github.com/pritikuma/AirlineManagement"><i class='bx bx-link-external'></i></a>
+        </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="assets/scott-graham-5fNmWej4tAA-unsplash.jpg" alt="">
+            <div class="portfolio-layer">
+            <h4>Guidance Hub</h4>
+            <p>Designed an interactive platform offering students personalized career guidance, resources, and mentorship to navigate academic and professional pathways effectively.</p>
+            <div class="tech-icons">
+                <i class='bx bxl-nodejs' title="Node.js"></i>
+                <i class='bx bxl-mongodb' title="MongoDB"></i>
+                <!-- <i class='bx bx-credit-card' title="Razorpay API"></i> -->
+                <i class='bx bxl-javascript' title="JavaScript"></i>
+            </div>
+            <a href="https://github.com/pritikuma/guidencehub/tree/master/components_react_2021"><i class='bx bx-link-external'></i></a>
+        </div> 
+        </div>
+         <div class="portfolio-box">
+            <img src="assets/trenchophotography-XvoPUjnm4Bk-unsplash.jpg" alt="">
+            <div class="portfolio-layer">
+            <h4>Campus-Collaborate</h4>
+            <p>A web-based platform that fosters seamless interaction among students, enabling discussion forums, file sharing, and collaborative learning. Built with a user-centric design and responsive interface.</p>
+            <div class="tech-icons">
+                <!-- <i class='bx bxl-nodejs' title="Node.js"></i>
+                <i class='bx bxl-mongodb' title="MongoDB"></i>
+                <i class='bx bx-credit-card' title="Razorpay API"></i> -->
+                <i class='bx bxl-html5' title="HTML"></i>
+                <i class='bx bxl-css3' title="CSS"></i>
+                <i class='bx bxl-javascript' title="JavaScript"></i>
+               </div>
+            <a href="https://github.com/pritikuma/Campus_Collaborate"><i class='bx bx-link-external'></i></a>
+        </div> 
+        </div>
+    </div>
+   </section>
+   <footer class="footer">
+    <div class="footer-text">
+        <!-- <p>copyright &copy</p>  -->
+    </div>
+    <div class="footer-iconTop">
+       
+        <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+    </div>
+   </footer>
+  
+   <script src="https://unpkg.com/scrollreveal"></script>
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script src="script.js" defer></script>
+  
+</body>
+</html>
